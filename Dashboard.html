@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <!-- <h1>Home</h1> -->
+      <h1>Dashboard</h1>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <div class="container">
+      <div class="welcome-box">
+        <h2>
+          Welcome,
+          <div id="userName" style="display: inline">User</div>
+          !
+        </h2>
+        <p>
+          You have successfully logged in. This is your dashboard where you can
+          manage your account and view important information.
+        </p>
+      </div>
+
+      <div class="user-info">
+        <h3>Your Profile</h3>
+        <div class="info-row">
+          <div class="info-label">Email:</div>
+          <div class="info-value" id="userEmail">user@example.com</div>
+        </div>
+        <div class="info-row">
+          <div class="info-label">Role:</div>
+          <div class="info-value" id="userRole">User</div>
+        </div>
+        <div class="info-row">
+          <div class="info-label">Joined:</div>
+          <div class="info-value" id="joinDate">Today</div>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="card">
+          <div class="card-icon"></div>
+          <h3>Friends</h3>
+          <p>View your Classmate's profile</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"></div>
+          <h3>Settings</h3>
+          <p>Manage your account settings</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"></div>
+          <h3>Messages</h3>
+          <p>Check your messages and notifications</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"></div>
+          <h3>Security</h3>
+          <p>Update your password and security options</p>
+        </div>
+      </div>
+    </div>
+    <script src="Dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+/* Removed empty @import that was blocking CSS parsing */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, antiquewhite, rgb(168, 153, 243));
+  color: rgb(39, 37, 37);
+}
+
+.container {
+  margin: 15px;
+}
+
+.form-Box {
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(7, 2, 2);
+  display: none;
+}
+
+.form-Box.active {
+  display: block;
+}
+
+h2 {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(244, 243, 243);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: rgb(63, 61, 61);
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: rgb(97, 97, 185);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: rgb(112, 112, 247);
+}
+
+input:focus,
+select:focus {
+  border: 2px solid rgb(97, 97, 185);
+  background-color: #fff;
+  transition: 0.2s ease;
+}
+
+button:focus {
+  outline: 2px solid rgb(112, 112, 247);
+  outline-offset: 2px;
+}
+
+p {
+  font-size: 14.5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+p a {
+  color: rgb(107, 107, 244);
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
